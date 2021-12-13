@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <title>agreements_subscription_agreement.sql</title>
+    <body>
+        <h1>Documentation: agreements_subscription_agreement.sql</h1>
+        <hr border="1">
+        <!-- Metadata -->
+        <p>
+            <table>
+                <tr>
+                    <td>Last update:</td>
+                    <td>2021-11-29</td>
+                </tr>
+                <tr>
+                    <td>Database:</td>
+                    <td>MetaDB</td>
+                </tr>
+                <tr>
+                    <td>Release:</td>
+                    <td>Honeysuckle</td>
+                </tr>
+                <tr>
+                    <td>Type:</td>
+                    <td>Derived table</td>
+                </tr>             
+            </table>
+        </p>
+        <hr border="1">
+        <!-- Description (content from your Report) -->
+        <p>
+            <h2>Description:</h2>
+            Table on agreements_subscription_agreement and resolves values and labels from erm_agreements_refdata_value for:
+            <ul>
+                <li>sa_renewal_priority</li>
+                <li>sa_is_perpetual</li>
+                <li>sa_agreement_status</li>
+                <li>sa_reason_for_closure</li>
+            </ul>
+        </p>
+        <hr border="1">
+        <!-- Table of attributes -->
+        <p>
+            <h2>Attributes:</h2>
+            <table border="1">
+                <th>Attribut</th>
+                <th>Type</th>
+                <th>Source - Schema</th>
+                <th>Source - Table</th>
+                <th>Source - Attribut</th>
+                <th>Source - Type</th>
+                <th>Source - Multiple values</th>
+                <th>Aggregation</th>
+                <th>Notes</th>
+                <tr>
+                    <td>sa_id</td> <!-- Attribut -->
+                    <td>Varchar</td> <!-- Type -->
+                    <td>folio_agreements</td> <!-- Source - Schema -->
+                    <td>subscription_agreement</td> <!-- Source - Table -->
+                    <td>sa_id</td> <!-- Source - Attribut -->
+                    <td>Varchar</td> <!-- Source - Type -->
+                    <td>No</td> <!-- Source - Multiple values -->
+                    <td>No</td> <!-- Aggregation -->
+                    <td></td> <!-- Notes -->
+                </tr>
+                <tr>
+                    <td>sa_renewal_priority</td> <!-- Attribut -->
+                    <td>Varchar</td> <!-- Type -->
+                    <td>folio_agreements</td> <!-- Source - Schema -->
+                    <td>subscription_agreement</td> <!-- Source - Table -->
+                    <td>sa_renewal_priority</td> <!-- Source - Attribut -->
+                    <td>Varchar</td> <!-- Source - Type -->
+                    <td>No</td> <!-- Source - Multiple values -->
+                    <td>No</td> <!-- Aggregation -->
+                    <td></td> <!-- Notes -->
+                </tr>
+                <tr>
+                    <td>sa_renewal_priority_value</td> <!-- Attribut -->
+                    <td>Varchar</td> <!-- Type -->
+                    <td>folio_agreements</td> <!-- Source - Schema -->
+                    <td>refdata_value</td> <!-- Source - Table -->
+                    <td>rdv_value</td> <!-- Source - Attribut -->
+                    <td>Varchar</td> <!-- Source - Type -->
+                    <td>No</td> <!-- Source - Multiple values -->
+                    <td>No</td> <!-- Aggregation -->
+                    <td></td> <!-- Notes -->
+                </tr>
+                <tr>
+                    <td>sa_renewal_priority_label</td> <!-- Attribut -->
+                    <td>Varchar</td> <!-- Type -->
+                    <td>folio_agreements</td> <!-- Source - Schema -->
+                    <td>refdata_value</td> <!-- Source - Table -->
+                    <td>rdv_label</td> <!-- Source - Attribut -->
+                    <td>Varchar</td> <!-- Source - Type -->
+                    <td>No</td> <!-- Source - Multiple values -->
+                    <td>No</td> <!-- Aggregation -->
+                    <td></td> <!-- Notes -->
+                </tr>
+                <tr>
+                    <td>sa_is_perpetual</td> <!-- Attribut -->
+                    <td>Varchar</td> <!-- Type -->
+                    <td>folio_agreements</td> <!-- Source - Schema -->
+                    <td>subscription_agreement</td> <!-- Source - Table -->
+                    <td>sa_is_perpetual</td> <!-- Source - Attribut -->
+                    <td>Varchar</td> <!-- Source - Type -->
+                    <td>No</td> <!-- Source - Multiple values -->
+                    <td>No</td> <!-- Aggregation -->
+                    <td></td> <!-- Notes -->
+                </tr>
+                <tr>
+                    <td>sa_is_perpetual_value</td> <!-- Attribut -->
+                    <td>Varchar</td> <!-- Type -->
+                    <td>folio_agreements</td> <!-- Source - Schema -->
+                    <td>refdata_value</td> <!-- Source - Table -->
+                    <td>rdv_value</td> <!-- Source - Attribut -->
+                    <td>Varchar</td> <!-- Source - Type -->
+                    <td>No</td> <!-- Source - Multiple values -->
+                    <td>No</td> <!-- Aggregation -->
+                    <td></td> <!-- Notes -->
+                </tr>
+                <tr>
+                    <td>sa_is_perpetual_label</td> <!-- Attribut -->
+                    <td>Varchar</td> <!-- Type -->
+                    <td>folio_agreements</td> <!-- Source - Schema -->
+                    <td>refdata_value</td> <!-- Source - Table -->
+                    <td>rdv_label</td> <!-- Source - Attribut -->
+                    <td>Varchar</td> <!-- Source - Type -->
+                    <td>No</td> <!-- Source - Multiple values -->
+                    <td>No</td> <!-- Aggregation -->
+                    <td></td> <!-- Notes -->
+                </tr>
+                <tr>
+                    <td>sa_name</td> <!-- Attribut -->
+                    <td>Varchar</td> <!-- Type -->
+                    <td>folio_agreements</td> <!-- Source - Schema -->
+                    <td>subscription_agreement</td> <!-- Source - Table -->
+                    <td>sa_name</td> <!-- Source - Attribut -->
+                    <td>Varchar</td> <!-- Source - Type -->
+                    <td>No</td> <!-- Source - Multiple values -->
+                    <td>No</td> <!-- Aggregation -->
+                    <td></td> <!-- Notes -->
+                </tr>
+                <tr>
+                    <td>sa_local_reference</td> <!-- Attribut -->
+                    <td>Varchar</td> <!-- Type -->
+                    <td>folio_agreements</td> <!-- Source - Schema -->
+                    <td>subscription_agreement</td> <!-- Source - Table -->
+                    <td>sa_local_reference</td> <!-- Source - Attribut -->
+                    <td>Varchar</td> <!-- Source - Type -->
+                    <td>No</td> <!-- Source - Multiple values -->
+                    <td>No</td> <!-- Aggregation -->
+                    <td>External sources</td> <!-- Notes -->
+                </tr>
+                <tr>
+                    <td>sa_agreement_status</td> <!-- Attribut -->
+                    <td>Varchar</td> <!-- Type -->
+                    <td>folio_agreements</td> <!-- Source - Schema -->
+                    <td>subscription_agreement</td> <!-- Source - Table -->
+                    <td>sa_agreement_status</td> <!-- Source - Attribut -->
+                    <td>Varchar</td> <!-- Source - Type -->
+                    <td>No</td> <!-- Source - Multiple values -->
+                    <td>No</td> <!-- Aggregation -->
+                    <td></td> <!-- Notes -->
+                </tr>
+                <tr>
+                    <td>sa_agreement_status_value</td> <!-- Attribut -->
+                    <td>Varchar</td> <!-- Type -->
+                    <td>folio_agreements</td> <!-- Source - Schema -->
+                    <td>refdata_value </td> <!-- Source - Table -->
+                    <td>rdv_value</td> <!-- Source - Attribut -->
+                    <td>Varchar</td> <!-- Source - Type -->
+                    <td>No</td> <!-- Source - Multiple values -->
+                    <td>No</td> <!-- Aggregation -->
+                    <td></td> <!-- Notes -->
+                </tr>
+                <tr>
+                    <td>sa_agreement_status_label</td> <!-- Attribut -->
+                    <td>Varchar</td> <!-- Type -->
+                    <td>folio_agreements</td> <!-- Source - Schema -->
+                    <td>refdata_value</td> <!-- Source - Table -->
+                    <td>rdv_label</td> <!-- Source - Attribut -->
+                    <td>Varchar</td> <!-- Source - Type -->
+                    <td>No</td> <!-- Source - Multiple values -->
+                    <td>No</td> <!-- Aggregation -->
+                    <td></td> <!-- Notes -->
+                </tr>
+                <tr>
+                    <td>sa_description</td> <!-- Attribut -->
+                    <td>Varchar</td> <!-- Type -->
+                    <td>folio_agreements</td> <!-- Source - Schema -->
+                    <td>subscription_agreement</td> <!-- Source - Table -->
+                    <td>sa_description</td> <!-- Source - Attribut -->
+                    <td>Varchar</td> <!-- Source - Type -->
+                    <td>No</td> <!-- Source - Multiple values -->
+                    <td>No</td> <!-- Aggregation -->
+                    <td></td> <!-- Notes -->
+                </tr>
+                <tr>
+                    <td>sa_license_note</td> <!-- Attribut -->
+                    <td>Varchar</td> <!-- Type -->
+                    <td>folio_agreements</td> <!-- Source - Schema -->
+                    <td>subscription_agreement</td> <!-- Source - Table -->
+                    <td>sa_license_note</td> <!-- Source - Attribut -->
+                    <td>Varchar</td> <!-- Source - Type -->
+                    <td>No</td> <!-- Source - Multiple values -->
+                    <td>No</td> <!-- Aggregation -->
+                    <td></td> <!-- Notes -->
+                </tr>
+                <tr>
+                    <td>sa_reason_for_closure</td> <!-- Attribut -->
+                    <td>Varchar</td> <!-- Type -->
+                    <td>folio_agreements</td> <!-- Source - Schema -->
+                    <td>subscription_agreement</td> <!-- Source - Table -->
+                    <td>sa_reason_for_closure</td> <!-- Source - Attribut -->
+                    <td>Varchar</td> <!-- Source - Type -->
+                    <td>No</td> <!-- Source - Multiple values -->
+                    <td>No</td> <!-- Aggregation -->
+                    <td></td> <!-- Notes -->
+                </tr>
+                <tr>
+                    <td>sa_reason_for_closure_value</td> <!-- Attribut -->
+                    <td>Varchar</td> <!-- Type -->
+                    <td>folio_agreements</td> <!-- Source - Schema -->
+                    <td>refdata_value</td> <!-- Source - Table -->
+                    <td>rdv_value</td> <!-- Source - Attribut -->
+                    <td>Varchar</td> <!-- Source - Type -->
+                    <td>No</td> <!-- Source - Multiple values -->
+                    <td>No</td> <!-- Aggregation -->
+                    <td></td> <!-- Notes -->
+                </tr>
+                <tr>
+                    <td>sa_reason_for_closure_label</td> <!-- Attribut -->
+                    <td>Varchar</td> <!-- Type -->
+                    <td>folio_agreements</td> <!-- Source - Schema -->
+                    <td>refdata_value</td> <!-- Source - Table -->
+                    <td>rdv_label</td> <!-- Source - Attribut -->
+                    <td>Varchar</td> <!-- Source - Type -->
+                    <td>No</td> <!-- Source - Multiple values -->
+                    <td>No</td> <!-- Aggregation -->
+                    <td></td> <!-- Notes -->
+                </tr>
+                <tr>
+                    <td>sa_custom_properties_id</td> <!-- Attribut -->
+                    <td>Varchar</td> <!-- Type -->
+                    <td>folio_agreements</td> <!-- Source - Schema -->
+                    <td>subscription_agreement</td> <!-- Source - Table -->
+                    <td>custom_properties_id</td> <!-- Source - Attribut -->
+                    <td>Int</td> <!-- Source - Type -->
+                    <td>No</td> <!-- Source - Multiple values -->
+                    <td>No</td> <!-- Aggregation -->
+                    <td></td> <!-- Notes -->
+                </tr>
+            </table>
+        </p>
+        <hr border="1">
+        <!-- ER-diagramm with mermaid -->
+        <h2>ER-diagram:</h2>
+        <div class="mermaid">
+        erDiagram
+            folio_agreements_subscription_agreement |o..o| folio_agreements_refdata_value : "renewal_priority"
+            folio_agreements_subscription_agreement |o..o| folio_agreements_refdata_value : "is_perpetual"
+            folio_agreements_subscription_agreement |o..o| folio_agreements_refdata_value : "status"
+            folio_agreements_subscription_agreement |o..o| folio_agreements_refdata_value : "reason_for_closure"
+                folio_agreements_subscription_agreement {
+                    varchar sa_id
+                    varchar sa_renewal_priority
+                    varchar sa_is_perpetual
+                    varchar sa_name
+                    varchar sa_local_reference
+                    varchar sa_agreement_status
+                    varchar sa_description
+                    varchar sa_license_note
+                    varchar sa_reason_for_closure
+                    varchar sa_custom_properties_id
+                }
+                folio_agreements_refdata_value {
+                    varchar sa_renewal_priority_value
+                    varchar sa_renewal_priority_label
+                    varchar sa_is_perpetual_value
+                    varchar sa_is_perpetual_label
+                    varchar sa_agreement_status_value
+                    varchar sa_agreement_status_label
+                    varchar sa_reason_for_closure_value
+                    varchar sa_reason_for_closure_label
+                }
+        </div>
+        <!-- Script to generate the diagram -->
+        <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script> <!-- Use API online -->
+        <!-- script src="mermaid_skript/mermaid.min.js"></script --> <!-- Use API offline -->
+        <script>mermaid.initialize({startOnLoad:true});</script>
+        <hr border="1">
+        <!-- The SQL: Copy and paste your SQL between the <pre>-Tags. -->
+        <h2>SQL:</h2>
+        <pre>
+DROP TABLE IF EXISTS folio_derived.agreements_subscription_agreement;
+
+-- Creates a derived table on agreements_subscription_agreement and 
+-- resolves values and labels from erm_agreements_refdata_value for:
+--    sa_renewal_priority
+--    sa_is_perpetual
+--    sa_agreement_status
+--    sa_reason_for_closure
+CREATE TABLE folio_derived.agreements_subscription_agreement AS
+SELECT
+    sa_id,
+    sa_renewal_priority,
+    sarp.rdv_value AS sa_renewal_priority_value,
+    sarp.rdv_label AS sa_renewal_priority_label,
+    sa_is_perpetual,
+    saip.rdv_value AS sa_is_perpetual_value,
+    saip.rdv_label AS sa_is_perpetual_label,
+    sa_name,
+    sa_local_reference,
+    sa_agreement_status,
+    saas.rdv_value AS sa_agreement_status_value,
+    saas.rdv_label AS sa_agreement_status_label,
+    sa_description,
+    sa_license_note,
+    sa_reason_for_closure,
+    sarfc.rdv_value AS sa_reason_for_closure_value,
+    sarfc.rdv_label AS sa_reason_for_closure_label,
+    custom_properties_id AS sa_custom_properties_id
+FROM
+    folio_agreements.subscription_agreement AS sa
+    LEFT JOIN folio_agreements.refdata_value AS sarp ON sa.sa_renewal_priority = sarp.rdv_id
+    LEFT JOIN folio_agreements.refdata_value AS saip ON sa.sa_is_perpetual = saip.rdv_id
+    LEFT JOIN folio_agreements.refdata_value AS saas ON sa.sa_agreement_status = saas.rdv_id
+    LEFT JOIN folio_agreements.refdata_value AS sarfc ON sa.sa_reason_for_closure = sarfc.rdv_id;
+
+CREATE INDEX ON folio_derived.agreements_subscription_agreement (sa_id);
+
+CREATE INDEX ON folio_derived.agreements_subscription_agreement (sa_renewal_priority);
+
+CREATE INDEX ON folio_derived.agreements_subscription_agreement (sa_renewal_priority_value);
+
+CREATE INDEX ON folio_derived.agreements_subscription_agreement (sa_renewal_priority_label);
+
+CREATE INDEX ON folio_derived.agreements_subscription_agreement (sa_is_perpetual);
+
+CREATE INDEX ON folio_derived.agreements_subscription_agreement (sa_is_perpetual_value);
+
+CREATE INDEX ON folio_derived.agreements_subscription_agreement (sa_is_perpetual_label);
+
+CREATE INDEX ON folio_derived.agreements_subscription_agreement (sa_name);
+
+CREATE INDEX ON folio_derived.agreements_subscription_agreement (sa_local_reference);
+
+CREATE INDEX ON folio_derived.agreements_subscription_agreement (sa_agreement_status);
+
+CREATE INDEX ON folio_derived.agreements_subscription_agreement (sa_agreement_status_value);
+
+CREATE INDEX ON folio_derived.agreements_subscription_agreement (sa_agreement_status_label);
+
+CREATE INDEX ON folio_derived.agreements_subscription_agreement (sa_description);
+
+CREATE INDEX ON folio_derived.agreements_subscription_agreement (sa_license_note);
+
+CREATE INDEX ON folio_derived.agreements_subscription_agreement (sa_reason_for_closure);
+
+CREATE INDEX ON folio_derived.agreements_subscription_agreement (sa_reason_for_closure_value);
+
+CREATE INDEX ON folio_derived.agreements_subscription_agreement (sa_reason_for_closure_label);
+
+CREATE INDEX ON folio_derived.agreements_subscription_agreement (sa_custom_properties_id);
+        </pre>
+    </body>
+</html>
